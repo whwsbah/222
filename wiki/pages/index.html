@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block title %}HOME{% endblock %}
+
+{% block page_content %}
+<link href="{{ url_for('static', filename = 'CSS/home.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'CSS/aos.css') }}" rel="stylesheet">
+<script src="{{ url_for('static', filename = 'JS/jquery-3.7.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename = 'JS/aos.js') }}"></script>
+<script src="{{ url_for('static', filename = 'JS/home.js') }}"></script>
+
+
+    <div class="par">
+        <div class="cover">
+            <img src="{{ url_for('static', filename = 'img/cover.png') }}" alt="">
+        </div>
+        <div class="nav_box">
+            <ul class="nav">
+                <li><a href="{{ url_for('pages', page = 'index') }}">HOME</a></li>
+                <li><a href="{{ url_for('pages', page = 'coral') }}">CORAL</a></li>
+                <li><a href="{{ url_for('pages', page = 'team') }}">TEAM</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="one" data-aos="fade-up">
+                <h2>
+                    Most prokaryotes have multiple functionally related genes in tandem, and rely on the same regulatory sequences to regulate their transcription and enable coordinated expression of these related genes.
+                </h2>
+            </div>
+            <div class="content">
+                <img src="{{ url_for('static', filename = 'img/DNA.jpg') }}" alt="" class="dna" data-aos="fade-right">
+                <p data-aos="fade-left">
+                    The expression of lactose metabolizing enzyme genes is characterized by the fact that these genes are turned off in the absence of lactose in the environment, and are induced to turn on only when lactose is present in the environment to synthesize the enzymes required to metabolize lactose. The lactose manipulator was the first mode of transcriptional regulation discovered in prokaryotes.
+                </p>
+            </div>
+            <div class="content1" data-aos="flip-left">
+                <img src="{{ url_for('static', filename = './img/阻遏.jpg') }}" alt="" class="yuanli">
+                <h1>
+                    Negative regulation by deterrent proteins
+                </h1>
+            </div>
+            <ul class="par">
+                <li>
+                    <div class="box">
+                        <img src="{{ url_for('static', filename = './img/P1.png') }}" alt="" class="part">
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <img src="{{ url_for('static', filename = './img/P2.png') }}" alt="" class="part">
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <img src="{{ url_for('static', filename = './img/P3.png') }}" alt="" class="part">
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <img src="{{ url_for('static', filename = './img/P4.png') }}" alt="" class="part">
+                    </div>
+                </li>
+                <div class="box content1" data-aos="flip-left">
+                    <img src="{{ url_for('static', filename = './img/CAP.jpg') }}" alt="" class="yuanli">
+                    <h1>
+                        Positive regulation of CAP
+                    </h1>
+                </div>
+                <div class="box last">
+                    <img src="{{ url_for('static', filename = './img/LAC OPERON.jpg') }}" alt="">
+                </div>
+                
+            </ul>
+        </div>
+    </div>
+
+{% endblock %} 

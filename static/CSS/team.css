@@ -1,0 +1,75 @@
+.contianer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+.member{
+    width: 80vw;
+    height: 200px;
+    position: relative;
+}
+.photo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    clip-path: circle(80px at center);
+    transition: .5s;
+}
+.member:hover .photo{
+    background-color: red;
+    border-radius: 20px;
+    clip-path: circle(100% at center);
+}
+.photo img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .5s;
+}
+.member:hover img{
+    left: 90%;
+    width: 220px;
+    height: 220px;
+}
+.content{
+    position: absolute;
+    padding: 20px;
+    width: 40vw;
+    left: 10%;
+    transition: .5s;
+    opacity: 0;
+}
+.member:hover .content{
+    left: 0;
+    top: 0;
+    opacity: 1;
+}
+.content p{
+    font-size: 30px;
+}
+.content h1{
+    font-size: 50px;
+}
+.table{
+    width: 80%;
+    border-collapse: collapse;
+}
+td{
+    text-align: center;
+    height: 50px;
+}
+th{
+    background-color: greenyellow;
+    height: 50px;
+}
+.table,th,td{
+    border: 1px solid black;
+}
