@@ -1,0 +1,36 @@
+.content{
+    width: 70%;
+    position: absolute;
+    left: 25%;
+}
+.left_nav{
+    width: 20%;
+    position: fixed;
+    top: 150px;
+    left: 5vh;
+    background-color: gainsboro;
+    border-radius: 5px;
+}
+.left_nav p{
+    margin: 10px 15px;
+    font-size: 17px;
+}
+.section{
+    background-color: pink;
+    border: 7px palevioletred solid;
+    border-radius: 25px;
+    margin: 50px 0;
+    padding: 10px;
+}
+.section h1{
+    margin: 15px;
+}
+.section p{
+    margin: 15px;
+    text-indent: 2em;
+    font-size: 20px;
+}
+.current{
+    color: blueviolet;
+    font-weight: bold;
+}
